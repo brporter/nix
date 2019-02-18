@@ -39,6 +39,8 @@ export PATH="$HOME/.dotnet:$PATH"
 # ESP Open SDK (Non-OS)
 export PATH=/home/brporter/esp/esp-open-sdk/xtensa-lx106-elf/bin:$PATH
 
-alias tmux="TERM=screen-256color-bce tmux"
+# rust
+export PATH=~/.cargo/bin:$PATH
 
-tmux
+export TERM="xterm-256color"
+alias tmux="TERM=xterm-256color tmux"

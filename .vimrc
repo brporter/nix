@@ -1,5 +1,14 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+set backspace=indent,eol,start
+
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=2
+" when indenting with '>', use 4 spaces width
+set shiftwidth=2
+" On pressing tab, insert 4 spaces
+set expandtab
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -23,6 +32,8 @@ Plugin 'git://git.wincent.com/command-t.git'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+Plugin 'bfrg/vim-cpp-modern'
 
 Plugin 'leafgarland/typescript-vim'
 
@@ -65,3 +76,5 @@ let g:clang_format#style_options = {
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+"
+syntax on
