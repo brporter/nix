@@ -3,10 +3,12 @@ filetype off                  " required
 set backspace=indent,eol,start
 
 filetype plugin indent on
+set smartindent
 " show existing tab with 4 spaces width
-set tabstop=2
+set tabstop=4
+set softtabstop=4
 " when indenting with '>', use 4 spaces width
-set shiftwidth=2
+set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
